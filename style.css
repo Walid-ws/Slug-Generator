@@ -13,3 +13,33 @@ body {
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
 }
+
+input, button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #23a6d5;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e90ff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: rgba(0,0,0,0.4);
+  margin: 5px auto;
+  padding: 8px;
+  border-radius: 5px;
+  width: fit-content;
+}

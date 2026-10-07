@@ -24,5 +24,10 @@ function slugify(text, removeStopWords = false) {
 function generateSlug() {
   const text = document.getElementById("titleInput").value;
   const removeStopWords = document.getElementById("stopWordsToggle").checked;
-  document.getElementById("output").innerText = slugify(text, removeStopWords);
+  const slug = slugify(text, removeStopWords);
+
+  // Add new slug to the list instead of replacing
+  const li = document.createElement("li");
+  li.innerText = slug;
+  document.getElementById("outputList").appendChild(li);
 }
