@@ -31,3 +31,11 @@ function generateSlug() {
   li.innerText = slug;
   document.getElementById("outputList").appendChild(li);
 }
+
+// 🔑 NEW: Trigger on Enter key
+document.getElementById("titleInput").addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // stop form submission
+    generateSlug();
+  }
+});
